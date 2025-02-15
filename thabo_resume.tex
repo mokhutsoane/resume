@@ -1,0 +1,217 @@
+%-------------------------
+% Resume in Latex
+% Author : Thabo Mokhutsoane
+% Based off of: https://github.com/mokhutsoane
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Thabo Mokhutsoane}} & Email : \href{mokhutsoane@gmail.com}{mokhutsoane@gmail.com}\\
+%   \href{https://linkedin.com/in/mokhutsoane}{https://linkedin.com/in/mokhutsoane} & Mobile : 065 950 6078 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Thabo Mokhutsoane} \\ \vspace{1pt}
+    \small 065 950 6078 $|$ \href{mailto:mokhutsoane@gmail.com}{\underline{mokhutsoane@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/mokhutsoane}{\underline{linkedin.com/in/mokhutsoane}} $|$
+    \href{https://github.com/mokhutsoane}{\underline{github.com/mokhutsoane}}
+\end{center}
+
+
+{After working in construction and mining until 2019, I transitioned to software development. I now build mobile apps with Flutter, Objective-C, Swift, and Java/Kotlin for engaging iOS and Android experiences, and develop scalable web apps using Django, Angular and React/Next.js}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Backspace Technologies, Cape Town -- Mobile Developer}{August 2023 -- Present}
+      {Web and Mobile Development}{}
+      \resumeItemListStart
+            \resumeItem{Development and maintenance of VoIP SoftPhone iOS (Objective-C) and Android (Kotlin) applications}
+            \resumeItem{Integrated various APIs, including QR code and barcode scanner functionalities.}
+            \resumeItem{Implemented various features, such as payment integration, wallet top-up, and OTP self-registration processes. }
+            \resumeItem{Customised Linphone with white labelling, creating a fully branded solution tailored to specific client needs.}
+            \resumeItem{Created a Customer Dashboard portal using Flutter, utilising the Bloc pattern for state management and implementing multi-flavor support via platform-specific Method Channels.}
+            \resumeItem{Created a Customer Dashboard portal using Angular for the web app.}
+      \resumeItemListEnd 
+      {}
+    \resumeSubheading
+      {Famgroup (Pty) Ltd -- Full-stack Developer}{December 2019 - August 2023}
+      {Web and Mobile Development}{}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack radio management web application using  Django serving a REST API with React/Next JS as the frontend}
+        \resumeItem{Created Radio App using flutter, utilising the Bloc pattern for state management and implementing multi-flavor support via platform-specific Method Channels.}
+        \resumeItem{Create Sports App using flutter}
+    \resumeItemListEnd
+    {}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Soccer App} $|$ \emph{Python, Django, Kotlin, Swift, Flutter, PostgreSQL, Git, Docker}}{Oct 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack mobile application by creating a Django REST API paired with a Flutter frontend.}
+            \resumeItem{Implemented Raspberry Pi–based Selenium web scraping to continuously update the Django API with fresh data.}
+            \resumeItem{Google Play Store Link: \href{https://play.google.com/store/apps/details?id=com.famcast.soccerscore}{\underline{com.famcast.soccerscore}}.}
+            \resumeItem{iOS App Store Link: \href{https://apps.apple.com/us/app/south-african-soccer/id1637097972}{\underline{south-african-soccer/id1637097972}}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{FamCast Radio App} $|$ \emph{Python, Django, Kotlin, Swift, GO, Flutter, PostgreSQL, Git, Docker}}{Nov 2017 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack radio application with a Django REST API and a Flutter frontend.}
+            \resumeItem{Engineered a Golang-powered API to dynamically filter and deliver only actively playing stations to the Flutter application.}
+            \resumeItem{Google Play Store Link: \href{https://play.google.com/store/apps/details?id=com.famcast.radioapp}{\underline{com.famcast.radioapp}}.}
+            \resumeItem{iOS App Store Link: \href{https://apps.apple.com/us/app/famcast-radio-app/id1470606058}{\underline{famcast-radio-app/id1470606058}}.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{OBD II Diagnostic Android App} $|$ \emph{Kotlin, Android, Bluetooth, OBD II Protocols}}{In Progress}
+            \resumeItemListStart
+                \resumeItem{Developing an Android application to interface with OBD II devices, enabling real-time vehicle diagnostics and data logging.}
+                \resumeItem{Implementing Bluetooth communication to retrieve and display vehicle performance data.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Kotlin, Java, Objective-C, Swift, Dart, Python, Go, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Flutter, Angular, React, Node.js, Django, SwiftUI, UIKit, WordPress, Material-UI, Bootstrap, Primeng, Tailwind CSS} \\
+     \textbf{Developer Tools}{: Git, Docker, Xcode, Android Studio, VS Code,  IntelliJ} \\
+     \textbf{Libraries}{: Liblinphone SDK, OBD II Java}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Irvine }{via Coursera}
+      {Programming with Google Go}{2024}
+    \resumeSubheading
+      {Amazon Web Services}{via Coursera}
+      {DevOps on AWS}{2024}
+    \resumeSubheading
+      {Heatherdale Secondary School}{Bloemfontein, FS}
+      {Grade 12}{2016}
+  \resumeSubHeadingListEnd
+  \section{Additional Training}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Concrete and Cement Institute}{Midrand, GP}
+      {Concrete Technology and Construction Level 4}{2009}
+    \resumeSubheading
+      {Palabora Mining Company}{Phalaborwa, Limpopo}
+      {2.9.2 Legal Appointment}{2012}
+    \resumeSubheading
+      {Dekra}{} 
+      {Legal Liability}{2011}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
